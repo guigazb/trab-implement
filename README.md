@@ -1,5 +1,5 @@
-Universidade Federal do Maranhão - Ciencia da computação(CP)
-Estrutura de Dados 1 - trabalho de implementação 1
+# Universidade Federal do Maranhão - Ciencia da computação(CP)
+# Estrutura de Dados 1 - trabalho de implementação 1
 professor: Anselmo Paiva
 autor: Guilherme Barrio Nascimento
 abril/2024
