@@ -1,7 +1,9 @@
 # Universidade Federal do Maranhão - Ciencia da computação(CP)
 # Estrutura de Dados 1 - trabalho de implementação 1
 professor: Anselmo Paiva
+
 autor: Guilherme Barrio Nascimento
+
 abril/2024
 
 o trabalho de implementação consiste na aplicação do conceito de conjuntos dinamicos na linguagem C, usando Tipos abstratos de dados (TAD)
