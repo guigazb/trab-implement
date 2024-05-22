@@ -17,11 +17,6 @@ void listarColecao(Jogo *c,int atual){
     tipoJogo *var = (tipoJogo*) gamegetfirst(c);
     int ind = 0;
     if(c != NULL && atual > 0){
-        /*for(i = 0; i < atual; i++){
-            printf("item %d: \n",i+1);
-            printf("nome: %s ,preco: %d ,duracao: %.2f \n", var->nome, var->preco, var->duracao);
-            var = (tipoJogo*)gameGetnext(c);
-        }*/
         while(var != NULL){
             printf("item %d: \n",ind + 1);
             printf("nome: %s ,preco: %d ,duracao: %.2f \n", var->nome, var->preco, var->duracao);
