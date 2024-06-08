@@ -80,15 +80,15 @@ int main(){
                 break;
             }
             case 2:{
-                tipoJogo *a = (tipoJogo *) malloc(sizeof(tipoJogo));
-                if(jogo != NULL && a != NULL){
+                tipoJogo *item = (tipoJogo *) malloc(sizeof(tipoJogo));
+                if(jogo != NULL && item != NULL){
                     printf("Nome: ");
-                    scanf("%s", a->nome);
+                    scanf(" %[^\n]s", item->nome);
                     printf("preco: ");
-                    scanf("%d", &a->preco);
+                    scanf("%d", &item->preco);
                     printf("duracao: ");
-                    scanf("%f", &a->duracao);
-                    if(gameInsert(jogo, a)){
+                    scanf("%f", &item->duracao);
+                    if(gameInsert(jogo, item) == true){
                         printf("jogo inserido com sucesso \n");
                         atual ++;
                         break;
@@ -101,15 +101,15 @@ int main(){
                 break;
             }
             case 3:{
-                tipoJogo *a = (tipoJogo *) malloc(sizeof(tipoJogo));
-                if(jogo != NULL && a != NULL){
+                tipoJogo *item = (tipoJogo *) malloc(sizeof(tipoJogo));
+                if(jogo != NULL && item != NULL){
                     printf("Nome: ");
-                    scanf("%s", a->nome);
+                    scanf(" %[^\n]s", item->nome);
                     printf("preco: ");
-                    scanf("%d", &a->preco);
+                    scanf("%d", &item->preco);
                     printf("duracao: ");
-                    scanf("%f", &a->duracao);
-                    gameRemove(jogo, a, cmp);
+                    scanf("%f", &item->duracao);
+                    gameRemove(jogo, item, cmp);
                     atual --;
                     break;
                 }
@@ -117,15 +117,15 @@ int main(){
                 break;
             }
             case 4:{
-                tipoJogo *a = (tipoJogo *) malloc(sizeof(tipoJogo));
-                if(jogo != NULL && a != NULL){
+                tipoJogo *item = (tipoJogo *) malloc(sizeof(tipoJogo));
+                if(jogo != NULL && item != NULL){
                     printf("Nome: ");
-                    scanf("%s", a->nome);
+                    scanf(" %[^\n]s", item->nome);
                     printf("preco: ");
-                    scanf("%d", &a->preco);
+                    scanf("%d", &item->preco);
                     printf("duracao: ");
-                    scanf("%f", &a->duracao);
-                    tipoJogo *chave = (tipoJogo*) gameQuery(jogo, a, cmp);
+                    scanf("%f", &item->duracao);
+                    tipoJogo *chave = (tipoJogo*) gameQuery(jogo, item, cmp);
                     if(chave != NULL){
                         printf("jogo encontrado ! \n");
                         printf("Nome: %s, preco: %d, duracao: %.2f \n", chave->nome, chave->preco, chave->duracao);
